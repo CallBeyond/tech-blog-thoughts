@@ -24,6 +24,9 @@ Sign in with an already established account, or sign up! Create, edit and delete
 ## Credits
 
 UofM-VIRT-FSF-PT-10-2023-U-LOLC-ENTG
+
+Thank you to [XDSirius](https://github.com/XDSirius) for assistance.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
