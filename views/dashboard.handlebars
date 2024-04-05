@@ -1,0 +1,20 @@
+{{#if logged_in}}
+  {{#each posts as |post|}}
+    <div>
+      <div class="postBox">
+        <div class="postTitle"><a href="/editpost/{{post.id}}"><h3
+            >{{post.title}}</h3></a><h9>Posted by
+            {{post.user.username}}
+            on
+            {{format_date post.createdAt}}</h9></div>
+      </div>
+    </div>
+  {{/each}}
+
+  <div id="newpostBox">
+    <a href="/createNewPost">
+      <button id="newpostBtn" type="button">+ New Post</button></a>
+  </div>
+{{else}}
+  <div><h1>Please Log In</h1></div>
+{{/if}}

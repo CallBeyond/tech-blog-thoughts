@@ -1,0 +1,17 @@
+<div id="form">
+  <h1>Edit Post</h1>
+  <form>
+    <h3>Title</h3>
+    <input class="inputBox" name="title" type="text" value="{{post.title}}" />
+    <h3>Content</h3>
+    <input
+      class="inputBox"
+      id="contentBox"
+      name="body"
+      type="text"
+      value="{{post.body}}"
+    />
+    <button formaction="/api/posts/updatePost/{{post.id}}">Update</button>
+    <button formaction="/api/posts/deletePost/{{post.id}}">Delete</button>
+  </form>
+</div>
